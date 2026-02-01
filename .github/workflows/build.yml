@@ -65,7 +65,7 @@ jobs:
           west build -s zmk/app -b ${{ matrix.board }} -- \
             -DZMK_CONFIG=${GITHUB_WORKSPACE}/config \
             -DKEYMAP_FILE=${GITHUB_WORKSPACE}/config/${{ matrix.keymap }} \
-            -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=300000
+            -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=30000
         env:
           PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION: python
 
